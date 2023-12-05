@@ -1,5 +1,6 @@
 import 'package:doctors/core/routing/routes.dart';
-import 'package:doctors/core/theme/app_colors.dart';
+import 'package:doctors/core/theme/colors/app_colors.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:doctors/core/routing/app_raoter.dart';
 import 'package:flutter/material.dart';
@@ -10,6 +11,12 @@ class DoctorsApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    SystemChrome.setSystemUIOverlayStyle(
+      const SystemUiOverlayStyle(
+        statusBarColor: Colors.white,
+        statusBarIconBrightness: Brightness.dark,
+      ),
+    );
     return ScreenUtilInit(
       designSize: const Size(375, 812),
       minTextAdapt: true,
@@ -20,7 +27,7 @@ class DoctorsApp extends StatelessWidget {
           initialRoute: Routes.onboardingScreen,
           theme: ThemeData(
             primaryColor: AppColors.primaryBlue,
-            textTheme: Typography.englishLike2018.apply(fontSizeFactor: 1.sp),
+            scaffoldBackgroundColor: Colors.white,
           ),
           onGenerateRoute: appRouter.generateRoute,
         );
