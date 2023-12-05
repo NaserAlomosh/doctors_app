@@ -1,5 +1,5 @@
 import 'package:doctors/features/login/ui/login_view.dart';
-import 'package:doctors/features/onboarding/ui/onboarding_view.dart';
+import 'package:doctors/features/onboarding/onboarding_view.dart';
 import 'package:doctors/features/sign_up/ui/widgets/signup_view.dart';
 import 'package:doctors/features/splash/ui/splash_view.dart';
 import 'package:doctors/core/routing/routes.dart';
