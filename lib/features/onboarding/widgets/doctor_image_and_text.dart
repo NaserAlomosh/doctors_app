@@ -10,7 +10,6 @@ class DoctorImageAndText extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Stack(
-      //
       children: [
         Center(
           child: SvgPicture.asset(
