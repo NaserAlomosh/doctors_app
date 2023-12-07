@@ -14,31 +14,33 @@ class OnboardingView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
-          child: SingleChildScrollView(
-        child: Column(
-          children: [
-            SizedBox(height: 30.h),
-            const DocLogoAndName(),
-            SizedBox(height: 30.h),
-            const DoctorImageAndText(),
-            Padding(
-              padding: EdgeInsets.symmetric(horizontal: 36.w),
-              child: Column(
-                children: [
-                  Text(
-                    AppString.descrptionOnbodrding,
-                    style: AppTextStyle.font13GrayRegular,
-                    textAlign: TextAlign.center,
-                  ),
-                  SizedBox(height: 40.h),
-                  const GetStartedButton(),
-                ],
+        child: SingleChildScrollView(
+          child: Column(
+            children: [
+              SizedBox(height: 30.h),
+              const DocLogoAndName(),
+              SizedBox(height: 60.sp),
+              const DoctorImageAndText(),
+              Padding(
+                padding: EdgeInsets.symmetric(horizontal: 36.w),
+                child: Column(
+                  children: [
+                    Text(
+                      AppString.descrptionOnbodrding,
+                      style: AppTextStyle.font13GrayRegular,
+                      textAlign: TextAlign.center,
+                    ),
+                    SizedBox(height: 40.sp),
+                    const GetStartedButton(),
+                  ],
+                ),
               ),
-            ),
-            SizedBox(height: 5.h),
-          ],
+              SizedBox(height: 5.h),
+            ],
+          ),
         ),
-      )),
+      ),
     );
   }
+  //
 }
