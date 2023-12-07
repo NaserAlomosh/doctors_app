@@ -16,12 +16,16 @@ class GetStartedButton extends StatelessWidget {
         context.pushNamed(Routes.loginScreen);
       },
       style: ButtonStyle(
-          backgroundColor: MaterialStateProperty.all(AppColors.primaryBlue),
-          minimumSize: MaterialStateProperty.all(
-            Size(double.infinity, 52.h),
+        backgroundColor: MaterialStateProperty.all(AppColors.primaryBlue),
+        minimumSize: MaterialStateProperty.all(
+          Size(double.infinity, 52.h),
+        ),
+        shape: MaterialStatePropertyAll(
+          RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(16.sp),
           ),
-          shape: MaterialStatePropertyAll(RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(16.sp)))),
+        ),
+      ),
       child: Text(
         AppString.getStated,
         style: AppTextStyle.font16white500Weight,
