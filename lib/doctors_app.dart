@@ -24,7 +24,7 @@ class DoctorsApp extends StatelessWidget {
       builder: (_, child) {
         return MaterialApp(
           debugShowCheckedModeBanner: false,
-          initialRoute: Routes.splashScreen,
+          initialRoute: Routes.onboardingScreen,
           theme: ThemeData(
             primaryColor: AppColors.primaryBlue,
             scaffoldBackgroundColor: Colors.white,

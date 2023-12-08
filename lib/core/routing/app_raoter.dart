@@ -4,15 +4,9 @@ import 'package:doctors/features/sign_up/ui/widgets/signup_view.dart';
 import 'package:doctors/core/routing/routes.dart';
 import 'package:flutter/material.dart';
 
-import '../../features/splash/splash_view.dart';
-
 class AppRouter {
   Route generateRoute(RouteSettings settings) {
     switch (settings.name) {
-      case Routes.splashScreen:
-        return MaterialPageRoute(
-          builder: (_) => const SplashView(),
-        );
       case Routes.onboardingScreen:
         return MaterialPageRoute(
           builder: (_) => const OnboardingView(),
