@@ -22,7 +22,7 @@ class GetStartedButton extends StatelessWidget {
         ),
         shape: MaterialStatePropertyAll(
           RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(16.sp),
+            borderRadius: BorderRadius.circular(16),
           ),
         ),
       ),

@@ -8,7 +8,7 @@ import 'package:flutter/material.dart';
 class DoctorsApp extends StatelessWidget {
   final AppRouter appRouter;
   const DoctorsApp({super.key, required this.appRouter});
-
+  //
   @override
   Widget build(BuildContext context) {
     SystemChrome.setSystemUIOverlayStyle(
