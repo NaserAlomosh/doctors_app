@@ -26,8 +26,8 @@ class OnboardingView extends StatelessWidget {
                 child: Column(
                   children: [
                     Text(
-                      AppString.descrptionOnbodrding,
-                      style: AppTextStyle.font13GrayRegular,
+                      AppStringEN.descrptionOnbodrding,
+                      style: AppTextStyles.font13GrayRegular,
                       textAlign: TextAlign.center,
                     ),
                     SizedBox(height: 40.sp),
