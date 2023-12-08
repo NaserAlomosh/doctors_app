@@ -19,7 +19,7 @@ class OnboardingView extends StatelessWidget {
             children: [
               SizedBox(height: 30.h),
               const DocLogoAndName(),
-              SizedBox(height: 30.h),
+              SizedBox(height: 60.sp),
               const DoctorImageAndText(),
               Padding(
                 padding: EdgeInsets.symmetric(horizontal: 36.w),
@@ -30,7 +30,7 @@ class OnboardingView extends StatelessWidget {
                       style: AppTextStyle.font13GrayRegular,
                       textAlign: TextAlign.center,
                     ),
-                    SizedBox(height: 40.h),
+                    SizedBox(height: 40.sp),
                     const GetStartedButton(),
                   ],
                 ),
@@ -42,4 +42,5 @@ class OnboardingView extends StatelessWidget {
       ),
     );
   }
+  //
 }
