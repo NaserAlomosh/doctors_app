@@ -58,6 +58,7 @@ dependencies:
   # A flutter plugin for adapting screen and font size.
   flutter_screenutil: ^5.9.0
 
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
